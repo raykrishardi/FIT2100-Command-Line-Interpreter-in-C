@@ -1,0 +1,78 @@
+shell(1)                                                                shell(1)
+
+
+NNAAMMEE
+       shell - command line interpreter
+
+SSYYNNOOPPSSIISS
+       clear
+       cd <directory>
+       ls <directory>
+       echo <statement>
+       create <file>
+       copy <old> <new>
+       search <pattern> <file>
+       run <program>[&]
+       halt <program>
+       help
+       quit
+
+DDEESSCCRRIIPPTTIIOONN
+       shell prompts the user for commands and interprets the given command if
+       the given command is one of the commands supported by the shell (clear,
+       cd, ls, echo, create, copy, search, run, halt, help, and quit).
+       The "help" command can be used to display this user manual which includes
+       information on the shell's builtin commands and their corresponding syntax.
+       Finally, in order to exit the shell, the user can use the "quit" command.
+
+SSHHEELLLL BBUUIILLTTIINN CCOOMMMMAANNDDSS
+       clear
+            Clear the output screen.
+
+       cd <directory>
+            Change the default directory to <directory>.
+            If the argument <directory> is not present, the current directory
+            is changed to the directory given by the HOME environment variable
+            in Unix.
+
+       ls <directory>
+            List the contents of the given directory named <directory>.
+
+       echo <statement>
+            Display <statement> on the output screen with a newline character.
+            Statement is a sequence of characters that begins and ends with
+            a double quote (e.g. "statement").
+
+       create <file>
+            Create a new file with the name <file>.
+            If there is an existing file with the same name <file> then the existing
+            file will be overwritten by the newly created file.
+
+       copy <old> <new>
+            Copy the contents of an existing file named <old> to a new file named <new>.
+            If there is an existing file with the same name <new> then the existing
+            file will be overwritten by the newly created file.
+
+       search <pattern> <file>
+            Display the number of occurrences of a sequence of characters <pattern>
+            in the file named <file>.
+
+       run <program>[&]
+            Execute an executable program named <program> in foreground.
+            If the '&' symbol is included at the end of <program> (e.g. program&),
+            the executable program named <program> will run in background.
+
+       halt <program>
+            Stop executing the program named <program>.
+
+       help
+            Display this user manual using the command less in Unix.
+
+       quit
+            Terminate the CLI program and exit.
+
+AAUUTTHHOORR
+       Ray Krishardi Layadi (rklay1 - 26445549)
+
+
+                              September 1, 2017                         shell(1)
